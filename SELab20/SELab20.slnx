@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="../DNP_Asm/DNP_Asm.vcxproj" Id="c8ad4d35-2649-4132-9afc-00bf48fb1fcc" />
+  <Project Path="../DNP_Lib/DNP_Lib.vcxproj" Id="a0b7dec5-1e31-4790-b854-812cad61a7d9" />
+  <Project Path="SELab20.vcxproj" Id="3e1e776d-48f2-4f60-b83b-84c0db86b06e" />
+</Solution>

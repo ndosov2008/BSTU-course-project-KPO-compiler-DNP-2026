@@ -1,0 +1,81 @@
+function short square(short x) {
+    short result = x * x;
+    return result;
+}
+function void greeting() {
+    print("Hello, DNP-2026!");
+    print("\n");
+}
+function void main() {
+    print("1. Ввод и вывод данных:\n");
+    short a;
+    short b;
+    print("Введите первое число (short): ");
+    input(a);
+    print("Введите второе число (short): ");
+    input(b);
+    print("Вы ввели: ");
+    print(a);
+    print(" и ");
+    print(b);
+    print("\n\n");
+    print("2. Типы данных и литералы:\n");
+    short decVal = -15;
+    short hexVal = 0x1A;
+    char sym = 'A';
+    string text = "Example";
+    print("decVal = ");
+    print(decVal);
+    print("\nhexVal (0x1A) = ");
+    print(hexVal);
+    print("\nsym = ");
+    print(sym);
+    print("\ntext = ");
+    print(text);
+    print("\n\n");
+    print("3. Арифметические операции и приоритет:\n");
+    short sum = a + b;
+    short diff = a - b;
+    short prod = a * b;
+    short div = a / b;
+    short mod = a % b;
+    short expr = (2 + 2) * 2;
+    print("a + b = "); print(sum); print("\n");
+    print("a - b = "); print(diff); print("\n");
+    print("a * b = "); print(prod); print("\n");
+    print("a / b = "); print(div); print("\n");
+    print("a % b = "); print(mod); print("\n");
+    print("(2 + 2) * 2 = "); print(expr); print("\n\n");
+    print("4. Цикл с постусловием (do while):\n");
+    short i = 1;
+    do {
+        print(i);
+        print(" ");
+        i = i + 1;
+    } while (i <= 5);
+    print("\n\n");
+    print("5. Условная конструкция:\n");
+    if (a < b) {
+        print("a меньше b\n\n");
+    } else {
+        print("a больше или равно b\n\n");
+    }
+    print("6. Пользовательские функции:\n");
+    short sq = square(4);
+    print("square(4) = ");
+    print(sq);
+    print("\n");
+    greeting();
+    print("\n");
+    print("7. Стандартная библиотека:\n");
+    short modVal = abs(decVal);
+    print("abs(-15) = ");
+    print(modVal);
+    print("\n");
+    string s1 = "apple";
+    string s2 = "banana";
+    short cmp = strcmp(s1, s2);
+    print("strcmp(\"apple\", \"banana\") = ");
+    print(cmp);
+    print("\n");
+}

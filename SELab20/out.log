@@ -1,0 +1,294 @@
+---- Протокол работы транслятора DNP-2026 ----
+Дата и время: 25.11.2026 02:20:39
+
+---- Входные параметры ----
+-in:  test.txt
+-out: out.asm
+-log: out.log
+
+---- Результаты ввода исходного кода ----
+Количество строк:       81
+Количество символов:    1763
+Количество пропущенных: 400
+
+---- Таблица лексем (LT) ----
+01 fti(ti){
+02 ti=ivi;
+03 ri;
+04 }
+05 fwi(){
+06 p(l);
+07 p(l);
+08 }
+09 fwm(){
+10 p(l);
+11 ti;
+12 ti;
+13 p(l);
+14 g(i);
+15 p(l);
+16 g(i);
+17 p(l);
+18 p(i);
+19 p(l);
+20 p(i);
+21 p(l);
+22 p(l);
+23 ti=l;
+24 ti=l;
+25 ti=l;
+26 ti=l;
+27 p(l);
+28 p(i);
+29 p(l);
+30 p(i);
+31 p(l);
+32 p(i);
+33 p(l);
+34 p(i);
+35 p(l);
+36 p(l);
+37 ti=ivi;
+38 ti=ivi;
+39 ti=ivi;
+40 ti=ivi;
+41 ti=ivi;
+42 ti=(lvl)vl;
+43 p(l);p(i);p(l);
+44 p(l);p(i);p(l);
+45 p(l);p(i);p(l);
+46 p(l);p(i);p(l);
+47 p(l);p(i);p(l);
+48 p(l);p(i);p(l);
+49 p(l);
+50 ti=l;
+51 o{
+52 p(i);
+53 p(l);
+54 i=ivl;
+55 }u(ikl);
+56 p(l);
+57 p(l);
+58 c(iki){
+59 p(l);
+60 }e{
+61 p(l);
+62 }
+63 p(l);
+64 ti=i(l);
+65 p(l);
+66 p(i);
+67 p(l);
+68 i();
+69 p(l);
+70 p(l);
+71 ti=i(i);
+72 p(l);
+73 p(i);
+74 p(l);
+75 ti=l;
+76 ti=l;
+77 ti=i(i,i);
+78 p(l);
+79 p(i);
+80 p(l);
+81 }
+
+---- Таблица идентификаторов (IT) ----
+ №   | Имя              | Область      | Тип     | Вид  | Значение
+ 0   | square           | -            | short   | F    | -
+ 1   | x                | square       | short   | P    | -
+ 2   | result           | square       | short   | V    | 0
+ 3   | greeting         | -            | void    | F    | -
+ 4   | L0               | -            | string  | L    | "Hello, DNP-2026!"
+ 5   | L1               | -            | string  | L    | "
+"
+ 6   | L2               | -            | string  | L    | "1. Ввод и вывод данных:
+"
+ 7   | a                | main         | short   | V    | 0
+ 8   | b                | main         | short   | V    | 0
+ 9   | L3               | -            | string  | L    | "Введите первое число (short): "
+ 10  | L4               | -            | string  | L    | "Введите второе число (short): "
+ 11  | L5               | -            | string  | L    | "Вы ввели: "
+ 12  | L6               | -            | string  | L    | " и "
+ 13  | L7               | -            | string  | L    | "
+
+"
+ 14  | L8               | -            | string  | L    | "2. Типы данных и литералы:
+"
+ 15  | decVal           | main         | short   | V    | 0
+ 16  | L9               | -            | short   | L    | -15
+ 17  | hexVal           | main         | short   | V    | 0
+ 18  | L10              | -            | short   | L    | 26
+ 19  | sym              | main         | char    | V    | '0'
+ 20  | L11              | -            | char    | L    | 'A'
+ 21  | text             | main         | string  | V    | ""
+ 22  | L12              | -            | string  | L    | "Example"
+ 23  | L13              | -            | string  | L    | "decVal = "
+ 24  | L14              | -            | string  | L    | "
+hexVal (0x1A) = "
+ 25  | L15              | -            | string  | L    | "
+sym = "
+ 26  | L16              | -            | string  | L    | "
+text = "
+ 27  | L17              | -            | string  | L    | "
+
+"
+ 28  | L18              | -            | string  | L    | "3. Арифметические операции и приоритет:
+"
+ 29  | sum              | main         | short   | V    | 0
+ 30  | diff             | main         | short   | V    | 0
+ 31  | prod             | main         | short   | V    | 0
+ 32  | div              | main         | short   | V    | 0
+ 33  | mod              | main         | short   | V    | 0
+ 34  | expr             | main         | short   | V    | 0
+ 35  | L19              | -            | short   | L    | 2
+ 36  | L20              | -            | short   | L    | 2
+ 37  | L21              | -            | short   | L    | 2
+ 38  | L22              | -            | string  | L    | "a + b = "
+ 39  | L23              | -            | string  | L    | "
+"
+ 40  | L24              | -            | string  | L    | "a - b = "
+ 41  | L25              | -            | string  | L    | "
+"
+ 42  | L26              | -            | string  | L    | "a * b = "
+ 43  | L27              | -            | string  | L    | "
+"
+ 44  | L28              | -            | string  | L    | "a / b = "
+ 45  | L29              | -            | string  | L    | "
+"
+ 46  | L30              | -            | string  | L    | "a % b = "
+ 47  | L31              | -            | string  | L    | "
+"
+ 48  | L32              | -            | string  | L    | "(2 + 2) * 2 = "
+ 49  | L33              | -            | string  | L    | "
+
+"
+ 50  | L34              | -            | string  | L    | "4. Цикл с постусловием (do while):
+"
+ 51  | i                | main         | short   | V    | 0
+ 52  | L35              | -            | short   | L    | 1
+ 53  | L36              | -            | string  | L    | " "
+ 54  | L37              | -            | short   | L    | 1
+ 55  | L38              | -            | short   | L    | 5
+ 56  | L39              | -            | string  | L    | "
+
+"
+ 57  | L40              | -            | string  | L    | "5. Условная конструкция:
+"
+ 58  | L41              | -            | string  | L    | "a меньше b
+
+"
+ 59  | L42              | -            | string  | L    | "a больше или равно b
+
+"
+ 60  | L43              | -            | string  | L    | "6. Пользовательские функции:
+"
+ 61  | sq               | main         | short   | V    | 0
+ 62  | L44              | -            | short   | L    | 4
+ 63  | L45              | -            | string  | L    | "square(4) = "
+ 64  | L46              | -            | string  | L    | "
+"
+ 65  | L47              | -            | string  | L    | "
+"
+ 66  | L48              | -            | string  | L    | "7. Стандартная библиотека:
+"
+ 67  | modVal           | main         | short   | V    | 0
+ 68  | abs              | -            | short   | S    | -
+ 69  | L49              | -            | string  | L    | "abs(-15) = "
+ 70  | L50              | -            | string  | L    | "
+"
+ 71  | s1               | main         | string  | V    | ""
+ 72  | L51              | -            | string  | L    | "apple"
+ 73  | s2               | main         | string  | V    | ""
+ 74  | L52              | -            | string  | L    | "banana"
+ 75  | cmp              | main         | short   | V    | 0
+ 76  | strcmp           | -            | short   | S    | -
+ 77  | L53              | -            | string  | L    | "strcmp("apple", "banana") = "
+ 78  | L54              | -            | string  | L    | "
+"
+
+---- Таблица лексем после ПОЛИЗ ----
+---- Таблица лексем (LT) ----
+01 fti(ti){
+02 ti=iiv;
+03 ri;
+04 }
+05 fwi(){
+06 pl;##
+07 pl;##
+08 }
+09 fwm(){
+10 pl;##
+11 ti;
+12 ti;
+13 pl;##
+14 g(i);
+15 pl;##
+16 g(i);
+17 pl;##
+18 pi;##
+19 pl;##
+20 pi;##
+21 pl;##
+22 pl;##
+23 ti=l;
+24 ti=l;
+25 ti=l;
+26 ti=l;
+27 pl;##
+28 pi;##
+29 pl;##
+30 pi;##
+31 pl;##
+32 pi;##
+33 pl;##
+34 pi;##
+35 pl;##
+36 pl;##
+37 ti=iiv;
+38 ti=iiv;
+39 ti=iiv;
+40 ti=iiv;
+41 ti=iiv;
+42 ti=llvlv;##
+43 pl;##pi;##pl;##
+44 pl;##pi;##pl;##
+45 pl;##pi;##pl;##
+46 pl;##pi;##pl;##
+47 pl;##pi;##pl;##
+48 pl;##pi;##pl;##
+49 pl;##
+50 ti=l;
+51 o{
+52 pi;##
+53 pl;##
+54 i=ilv;
+55 }u(ikl);
+56 pl;##
+57 pl;##
+58 c(iki){
+59 pl;##
+60 }e{
+61 pl;##
+62 }
+63 pl;##
+64 ti=l@1;#
+65 pl;##
+66 pi;##
+67 pl;##
+68 i();
+69 pl;##
+70 pl;##
+71 ti=i@1;#
+72 pl;##
+73 pi;##
+74 pl;##
+75 ti=l;
+76 ti=l;
+77 ti=ii@2;##
+78 pl;##
+79 pi;##
+80 pl;##
+81 }
+
